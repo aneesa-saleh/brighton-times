@@ -656,7 +656,7 @@ footer a {
   .scores {
     padding-top: 12px;
     max-width: 100%;
-    overflow-x: scroll;
+    overflow-x: auto;
   }
 
   .scores__table {
