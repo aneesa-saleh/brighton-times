@@ -293,11 +293,10 @@ main {
  .scores__table td {
    position: relative;
    padding-left: 30%;
-   padding-top: 5px;
-   padding-bottom: 5px;
+   padding-top: 8px;
+   padding-bottom: 8px;
    text-align: right;
    margin: 10px 0px;
-   border-bottom: 1px solid lightgray;
  }
 
  .scores__table td:before {
@@ -318,7 +317,6 @@ main {
 
  .scores__table td.winner {
    font-weight: bold;
-   color: #004f00;
  }
 
  .scores__title {
@@ -394,6 +392,11 @@ main {
   padding: 1em;
 }
 
+.recent-news ul {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 .snippet {
   margin: 24px 0;
   display: flex;
@@ -401,6 +404,8 @@ main {
 
 .snippet p {
   text-align: justify;
+  letter-spacing: 1px;
+  word-spacing: 3px;
 }
 
 .snippet__thumbnail {
@@ -471,7 +476,7 @@ footer a {
 
 @media screen and (min-width: 500px) {
   .scores__table tr {
-    padding: 10px 80px;
+    padding: 10px 100px;
   }
 }
 
@@ -610,6 +615,7 @@ footer a {
   .scores__table td {
     position: static;
     border: none;
+    text-align: left;
   }
 
   .scores__table td:before {
