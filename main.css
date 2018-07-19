@@ -7,8 +7,7 @@ html {
 }
 
 body {
-  font-family: Roboto;
-  /*line-height: 1.2em;*/
+  font-family: 'Source Sans Pro', sans-serif;
   color: #424242;
 }
 
@@ -27,6 +26,7 @@ h3,
 h4,
 h5 {
   margin: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 
 header,
@@ -84,22 +84,22 @@ button {
 }
 
 .header__logo {
-  height: 50px;
+  height: 40px;
   vertical-align: top;
   margin: 0.5em 0.25em;
 }
 
 .header__title {
   font-weight: 300;
-  font-size: 27px;
-  margin: 0.8em 0.25em;
+  font-size: 23px;
+  line-height: 2.4em;
   display: inline-block;
   color: #212121;
 }
 
 #nav-button {
   float: right;
-  margin: 1.2em 0.25em;
+  line-height: 2.7em;
   font-size: 20px;
 }
 
@@ -150,6 +150,7 @@ button {
   text-decoration: none;
   color: #616161;
   padding: 1.5em;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .nav a:hover {
@@ -189,7 +190,7 @@ main {
   position: relative;
   background-image: url("./images/dog.jpg");
   background-size: cover;
-  height: 400px;
+  height: 300px;
 }
 
 .hero article {
@@ -201,7 +202,11 @@ main {
   min-height: 40%;
   width: 100%;
   color: #fff;
-  padding: 1em;
+  padding: 5px;
+}
+
+.hero article h2 {
+  font-size: 20px;
 }
 
 
@@ -388,14 +393,16 @@ main {
 }
 
 .snippet {
-  clear: both;
   margin: 24px 0;
+  display: flex;
+}
+
+.snippet p {
+  text-align: justify;
 }
 
 .snippet__thumbnail {
-  width: 100px;
-  float: left;
-  margin-right: 1em;
+  display: none;
 }
 
 .snippet__title {
@@ -426,20 +433,37 @@ footer {
   text-align: center;
 }
 
-footer li {
-  display: inline-block;
-  margin: 0 1em;
-}
-
 footer a {
   text-decoration: none;
   color: #333;
   padding: 1.5em;
+  display: block;
 }
 
 @media screen and (min-width: 440px) {
   .scores__table tr {
     padding: 10px 60px;
+  }
+  /*
+   *
+   * Header
+   *
+   */
+
+  .header__inner {
+    padding: 0 20px;
+  }
+  .header__logo {
+    height: 50px;
+  }
+
+  .header__title {
+    font-size: 2em;
+    margin: 0.2em 0;
+  }
+  #nav-button {
+    line-height: 3em;
+    font-size: 22px;
   }
 }
 
@@ -450,7 +474,7 @@ footer a {
 }
 
 
-@media screen and (min-width: 540px) {
+@media screen and (min-width: 600px) {
   /*
    *
    * Top Level Navigation
@@ -489,12 +513,12 @@ footer a {
    */
 
   .header__logo {
-    height: 50px;
+    height: 60px;
   }
 
   .header__title {
-    font-size: 2.2em;
-    margin: 0.8em 0.25em;
+    font-size: 2.5em;
+    margin-left: 10px;
   }
 
   #nav-button {
@@ -517,12 +541,13 @@ footer a {
   }
 
   .hero {
-    width: 50%;
+    width: 60%;
+    height: auto;
     order: 1;
   }
 
   .weather {
-    width: 50%;
+    width: 40%;
     order: 2;
   }
 
@@ -635,8 +660,6 @@ footer a {
     font-weight: bold;
   }
 
-
-
   .scores__table td:nth-child(3) {
     text-align: right;
   }
@@ -645,6 +668,32 @@ footer a {
   .scores__table td:nth-child(5) {
     text-align: center;
   }
+
+  /*
+   *
+   * News
+   *
+   */
+   .snippet__thumbnail {
+     display: inherit;
+     width: 120px;
+     margin-top: 5px;
+     margin-right: 1em;
+   }
+
+  /*
+   *
+   * Footer
+   *
+   */
+
+   footer a, footer li {
+     display: inline-block;
+   }
+
+   .hero article {
+     padding: 5px 15px;
+   }
 }
 
 @media screen and (min-width: 900px) {
@@ -669,6 +718,7 @@ footer a {
 
   .hero {
     width: 50%;
+    height: auto;
   }
 
   .top-news {
@@ -689,15 +739,6 @@ footer a {
    * Header
    *
    */
-
-  .header__logo {
-    height: 60px;
-  }
-
-  .header__title {
-    font-size: 2.5em;
-    margin: 0.8em 0.25em;
-  }
 
   .header__inner {
     width: 900px;
