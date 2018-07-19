@@ -14,8 +14,7 @@ https://aneesa-saleh.github.io/brighton-times.
 6. Add minor breakpoints where necessary.
 7. Replace some of the images with responsive images.
 
-# How to run
+## How to run
 1. `npm install`.
-2. `npm run grunt` (to generate compressed and resized images).
-3. `npm run browser-sync`.
-4. Go to http://localhost:3000.
+2. `npm run browser-sync`.
+3. Go to http://localhost:3000.
