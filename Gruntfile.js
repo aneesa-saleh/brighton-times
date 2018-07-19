@@ -12,7 +12,7 @@ module.exports = function(grunt) {
     favicons: {
       options: {
         html: 'index.html',
-        HTMLPrefix: '/images/favicon/'
+        HTMLPrefix: 'images/favicon/'
       },
       icons: {
         src: 'images_src/city.png',
