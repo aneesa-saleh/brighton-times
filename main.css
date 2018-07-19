@@ -84,15 +84,15 @@ button {
 }
 
 .header__logo {
-  height: 40px;
+  height: 30px;
   vertical-align: top;
-  margin: 0.5em 0.25em;
+  margin: 0.9em 0.25em;
 }
 
 .header__title {
   font-weight: 300;
-  font-size: 23px;
-  line-height: 2.4em;
+  font-size: 22px;
+  line-height: 2.6em;
   display: inline-block;
   color: #212121;
 }
@@ -101,6 +101,7 @@ button {
   float: right;
   line-height: 2.7em;
   font-size: 20px;
+  min-width: 40px;
 }
 
 
@@ -170,6 +171,7 @@ main {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 10px;
 }
 
 /*
@@ -188,7 +190,7 @@ main {
 .hero {
   width: 100%;
   position: relative;
-  background-image: url("./images/dog.jpg");
+  background-image: url("./images/dog-600.jpg");
   background-size: cover;
   height: 300px;
 }
@@ -202,7 +204,7 @@ main {
   min-height: 40%;
   width: 100%;
   color: #fff;
-  padding: 5px;
+  padding: 5px 15px;
 }
 
 .hero article h2 {
@@ -459,10 +461,10 @@ footer a {
 
   .header__title {
     font-size: 2em;
-    margin: 0.2em 0;
+    margin: 0.4em 0;
   }
   #nav-button {
-    line-height: 3em;
+    line-height: 3.5em;
     font-size: 22px;
   }
 }
@@ -517,8 +519,13 @@ footer a {
   }
 
   .header__title {
-    font-size: 2.5em;
+    font-size: 35px;
     margin-left: 10px;
+    line-height: 55px;
+  }
+
+  .header__inner {
+    text-align: center;
   }
 
   #nav-button {
@@ -690,10 +697,14 @@ footer a {
    footer a, footer li {
      display: inline-block;
    }
+}
 
-   .hero article {
-     padding: 5px 15px;
-   }
+@media screen and (min-width: 750px) {
+  .header__title {
+    font-size: 40px;
+    margin-left: 10px;
+    line-height: 60px;
+  }
 }
 
 @media screen and (min-width: 900px) {
