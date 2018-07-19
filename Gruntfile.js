@@ -9,6 +9,16 @@
 module.exports = function(grunt) {
 
   grunt.initConfig({
+    favicons: {
+      options: {
+        html: 'index.html',
+        HTMLPrefix: '/images/favicon/'
+      },
+      icons: {
+        src: 'images_src/city.png',
+        dest: 'images/favicon'
+      }
+    },
     responsive_images: {
       dev: {
         options: {
@@ -66,6 +76,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-mkdir');
-  grunt.registerTask('default', ['clean', 'mkdir', 'copy', 'responsive_images']);
+  grunt.loadNpmTasks('grunt-favicons');
+  grunt.registerTask('default', ['clean', 'mkdir', 'copy', 'responsive_images', 'favicons']);
 
 };
