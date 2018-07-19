@@ -47,6 +47,7 @@ ul {
 button {
   background-color: white;
   border: none;
+  cursor: pointer;
 }
 
 
@@ -104,6 +105,12 @@ button {
   min-width: 40px;
 }
 
+#nav-close-button {
+  font-size: 20px;
+  margin: 10px 0px 0px 10px;
+  padding: 10px;
+}
+
 
 /*
  *
@@ -133,7 +140,7 @@ button {
 
 .nav__list {
   width: 100%;
-  padding: 20px 0;
+  padding: 5px 0;
   margin: 0;
 }
 
@@ -404,8 +411,6 @@ main {
 
 .snippet p {
   text-align: justify;
-  letter-spacing: 1px;
-  word-spacing: 3px;
 }
 
 .snippet__thumbnail {
@@ -535,6 +540,15 @@ footer a {
 
   #nav-button {
     display: none;
+  }
+
+  #nav-close-button {
+    display: none;
+  }
+
+  .snippet p {
+    letter-spacing: 1px;
+    word-spacing: 3px;
   }
 
   /*
