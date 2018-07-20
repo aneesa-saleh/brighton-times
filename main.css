@@ -504,8 +504,9 @@ footer a {
      z-index: auto;
      box-shadow: none;
      background-color: transparent;
-     -webkit-transform: translate(0, 0);
-     transform: translate(0, 0);
+     transition: trasform 0s;
+     -webkit-transform: unset;
+     transform: unset;
    }
 
   .nav__list {
